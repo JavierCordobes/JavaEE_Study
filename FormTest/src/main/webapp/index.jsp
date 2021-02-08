@@ -17,64 +17,69 @@
 		onsubmit="return validarForma(this)">
 
 		<input type="hidden" name="oculto" value="valorOculto">
+		<p>
+			<label> Usuario<br> <input type="text" name="usuario">
+			</label>
+		</p>
 
-		<table width="500" id="enfasis-columna">
-			<caption>Formulario Registro Datos</caption>
-			<tr>
-				<td class="columna">Usuario:</td>
-				<td><input class="default" type="text" name="usuario"
-					onfocus="this.select()"></td>
-			</tr>
-			<tr>
-				<td class="columna">Password:</td>
-				<td><input class="default" type="password" name="password"
-					onfocus="this.select()"></td>
-			</tr>
-			<tr>
-				<td class="columna">Tecnologia:</td>
-				<td>Java <input type="checkbox" name="tecnologia" value="java">&nbsp;&nbsp;&nbsp;
-					.Net <input type="checkbox" name="tecnologia" value="net">&nbsp;&nbsp;&nbsp;
-					PHP <input type="checkbox" name="tecnologia" value="php">&nbsp;&nbsp;&nbsp;
-				</td>
-			</tr>
-			<tr>
-				<td class="columna">Genero:</td>
-				<td>Hombre <input type="radio" name="genero" value="H">&nbsp;&nbsp;&nbsp;
-					Mujer <input type="radio" name="genero" value="M">&nbsp;&nbsp;&nbsp;
-					Otro <input type="radio" name="genero" value="O">&nbsp;&nbsp;&nbsp;
-				</td>
-			</tr>
-			<tr>
-				<td class="columna">Ocupación:</td>
-				<td><select name="ocupacion" class="default">
-						<option value="0">Seleccione Profesion</option>
-						<option value="1">Profesional</option>
-						<option value="2">Estudiante</option>
-						<option value="3">Independiente</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td class="columna">Libreta de Conducir:</td>
-				<td><select name="libreta" multiple class="default">
+		<p>
+			<label>Password<br> <input type="password"
+				name="password">
+			</label>
+		</p>
 
-						<option value="Moto">No</option>
-						<option value="Moto">Moto</option>
-						<option value="Auto">Auto</option>
-						<option value="Profesional">Profesional</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td class="columna">Comentarios:</td>
-				<td><textarea name="comentario" rows="2" cols="30"
-						class="default" onfocus="this.select()" Escribir un texto></textarea>
-				</td>
-			</tr>
-			<tr style="text-align: center">
+		<p>
+			<label>Tecnologia</label> <input type="checkbox" name="tecnologia"
+				value="java"><label for="cb1">Java</label> <input
+				type="checkbox" name="tecnologia" value="net"><label
+				for="cb2">.Net</label> <input type="checkbox" name="tecnologia"
+				value="php"><label for="cb3">PHP</label>
+		</p>
 
-				<td><input type="reset" value="Limpiar" class="default"></td>
-				<td><input type="submit" value="Enviar" class="default" /></td>
-			</tr>
-		</table>
+		<p>
+			<label>Genero</label>
+		<p>
+			<input type="radio" name="genero" value="M"><label for="rad2">Mujer</label>
+			<input type="radio" name="genero" value="H"><label for="rad1">Hombre</label>
+			<input type="radio" name="genero" value="O"><label for="rad3">Otro</label><br>
+		</p>
+
+
+		<p>
+			<label> Ocupación<br> <select name="ocupacion">
+					<option value="" disabled selected>Seleccione Ocupación</option>
+					<option value="Profesional">Profesional</option>
+					<option value="Estudiante">Estudiante</option>
+					<option value="Independiente">Independiente</option>
+			</select>
+			</label>
+		</p>
+
+		<p>
+			<label>Libreta de Conducir<br> <select name="libreta"
+				multiple>
+					<option value="Moto">No</option>
+					<option value="Moto">Moto</option>
+					<option value="Auto">Auto</option>
+					<option value="Profesional">Profesional</option>
+			</select>
+			</label>
+		</p>
+
+		<p>
+			<label> Comentarios<br> <textarea name="comentario"
+					rows="5" cols="40"></textarea>
+			</label>
+		</p>
+
+		<p>
+			<input type="reset" value="Limpiar" class="default">
+		</p>
+		<p>
+			<input type="submit" value="Enviar" class="default" />
+		</p>
+
+
 	</form>
 
 </body>
