@@ -15,6 +15,7 @@
 
 	<form name="form1" action="formServ" method="post"
 		onsubmit="return validarForma(this)">
+			<fieldset >
 
 		<input type="hidden" name="oculto" value="valorOculto">
 		<p>
@@ -44,7 +45,7 @@
 			<input type="radio" name="genero" value="O"><label for="rad3">Otro</label><br>
 		</p>
 
-
+	</fieldset>
 		<p>
 			<label> Ocupación<br> <select name="ocupacion">
 					<option value="" disabled selected>Seleccione Ocupación</option>

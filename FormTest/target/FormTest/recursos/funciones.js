@@ -45,7 +45,7 @@ function validarForma(forma) {
 	}
 
 	var ocupacion = forma.ocupacion;
-	if (ocupacion.value == "0") {
+	if (ocupacion.value == "") {
 		alert("Debe seleccionar una ocupacion");
 		return false;
 	}
@@ -63,8 +63,15 @@ function myFunction() {
 
 
 
+// From Chris Smith's "All Form Elements" pen: https://codepen.io/chris22smith/pen/pymBWL
 
 
+function printValue(sliderID, textbox) {
+	 var x = document.getElementById(textbox);
+	 var y = document.getElementById(sliderID);
+	 x.value = y.value;
+}
 
-
-
+window.onload = function() { 
+	printValue('rangeSlider', 'rangeValue');
+}
